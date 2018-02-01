@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/my_grocery"
+            android:icon="@mipmap/ic_launcher"
+            android:title="My Grocery" />
+        <item
+            android:id="@+id/nav_2"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Expendable ListView"/>
+        <item
+            android:id="@+id/nav_3"
+            android:icon="@mipmap/ic_launcher"
+            android:title="ListView Image"/>
+        <item
+            android:id="@+id/gallery"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Gallery"/>
+
+        <item
+            android:id="@+id/directions"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Directions"/>
+
+        <item
+            android:id="@+id/locateMe"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Locate Me"/>
+        <item
+            android:id="@+id/meetingRequest"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Meeting Request"/>
+
+        <item
+            android:id="@+id/maintenance"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Maintenance"/>
+
+        <item
+            android:id="@+id/logout"
+            android:icon="@mipmap/ic_launcher"
+            android:title="Logout"/>
+
+
+
+
+    </group>
+
+    <!--    <item android:title="Communicate">
+            <menu>
+                <item
+                    android:id="@+id/nav_share"
+                    android:icon="@drawable/ic_menu_share"
+                    android:title="Share" />
+                <item
+                    android:id="@+id/nav_send"
+                    android:icon="@drawable/ic_menu_send"
+                    android:title="Send" />
+            </menu>
+        </item>-->
+
+</menu>

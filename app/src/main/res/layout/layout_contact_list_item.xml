@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/margin_gap_10dp"
+        android:layout_marginRight="@dimen/margin_gap_10dp"
+        android:layout_marginBottom="@dimen/margin_gap_5dp"
+        android:layout_marginTop="@dimen/margin_gap_5dp"
+        card_view:cardCornerRadius="3dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            >
+
+            <ImageView
+                android:layout_width="@dimen/margin_gap_40dp"
+                android:layout_height="match_parent"
+                android:id="@+id/person_photo"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="16dp"
+                android:src="@mipmap/icons_person"
+                android:background="@drawable/circle"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@+id/person_photo"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/person_name"
+                android:text="Venkat"
+                android:gravity="center_vertical"
+                android:textSize="18sp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/flat_no"
+                android:text="202"
+                android:layout_below="@+id/person_name"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                />
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/phone_call"
+                android:src="@mipmap/icons_phone"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:padding="@dimen/margin_gap_10dp"
+                android:layout_marginRight="35dp"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/admin_edit"
+                android:src="@mipmap/icon_edit"
+                android:layout_toLeftOf="@id/phone_call"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="@dimen/margin_gap_10dp"
+                android:padding="@dimen/margin_gap_10dp"
+                />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

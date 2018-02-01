@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/container">
+
+        <LinearLayout
+            android:id="@+id/view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <!--<com.mobisolutions.ams.uikit.widget.CustomTextView-->
+                <!--style="@style/Theme.ams.Headline"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/default_margin"-->
+                <!--android:focusable="true"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:gravity="center"-->
+                <!--android:text="@string/log_in_header">-->
+
+                <!--<requestFocus />-->
+            <!--</com.mobisolutions.ams.uikit.widget.CustomTextView>-->
+
+            <include
+                android:id="@+id/error_email_phone"
+                layout="@layout/error_view"
+                android:visibility="gone"
+                android:layout_marginLeft="50dp"
+                android:layout_gravity="start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                android:id="@+id/email_phone_hint"
+                style="@style/Theme.ams.Register.Card"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/email_phone"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:inputType="textEmailAddress"
+                    android:hint="@string/email_phone" />
+
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                style="@style/Theme.ams.Register.Card"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                app:passwordToggleContentDescription="@string/acs_display_password_toggle"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/password"
+                    style="@style/Theme.ams.Text.Input.Password.Center"
+                    android:hint="@string/account_password"
+                    android:inputType="textPassword" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/error_layout"
+                style="@style/Theme.ams.Error.Holder"
+                android:layout_marginTop="@dimen/default_margin"
+                android:focusable="true"
+                android:visibility="gone">
+
+                <ImageView style="@style/Theme.McD.Error.Image" />
+
+                <com.mobisolutions.ams.uikit.widget.CustomTextView
+                    android:id="@+id/mcd_error_text_login"
+                    style="@style/Theme.McD.Error.Text" />
+            </LinearLayout>
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/forgot_password_link"
+                style="@style/Theme.ams.Link.Small"
+                android:layout_marginTop="@dimen/default_margin"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/forgot_password" />
+
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/dont_have_account"
+                style="@style/Theme.ams.Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:focusable="true"
+                android:gravity="center"
+                android:nextFocusDown="@+id/login_link"
+                android:nextFocusRight="@+id/login_link"
+                android:text="@string/login_dont_have_account"
+                android:textSize="@dimen/ams_text_label" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/register_link"
+                style="@style/Theme.ams.Link.Medium"
+                android:contentDescription="@string/acs_register_login_msg"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/register"
+                android:textSize="@dimen/ams_text_default" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="bottom"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/save"
+                style="@style/Theme.ams.Text.Button.Large.Disabled"
+                android:background="@drawable/gradient_yellow_button_disabled"
+                android:text="@string/log_in_button" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

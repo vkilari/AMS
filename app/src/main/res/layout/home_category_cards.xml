@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:id="@+id/layout_row"
+    android:background="@color/ams_medium_gray"
+    android:padding="15dp"
+    >
+
+
+    <ImageView
+        android:id="@+id/category_overflow"
+        android:layout_width="@dimen/margin_gap_20dp"
+        android:layout_height="@dimen/margin_gap_20dp"
+        android:layout_gravity="right|top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/icons_more_vertical" />
+
+
+    <com.mobisolutions.ams.uikit.widget.CustomTextView
+        android:id="@+id/category_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Medium Text"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:textSize="16sp"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+</FrameLayout>

@@ -1,0 +1,34 @@
+{"services": [
+	{
+		"service_id": "101",
+		"service_name": "banner",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "102",
+		"service_name": "categories",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "103",
+		"service_name": "contacts",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "104",
+		"service_name": "maintenance",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "105",
+		"service_name": "meetings",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	}
+
+]
+}

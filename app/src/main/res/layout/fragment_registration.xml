@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/content_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="@dimen/default_margin">
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                style="@style/Theme.ams.Headline"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/default_margin"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/register">
+
+                <requestFocus />
+            </com.mobisolutions.ams.uikit.widget.CustomTextView>
+
+            <include
+                android:id="@+id/error_first_name"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                style="@style/Theme.ams.Register.Card"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/first_name"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:hint="@string/account_first_name"
+                    android:inputType="textPersonName|textCapSentences"
+                    android:maxLength="20" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <include
+                android:id="@+id/error_phone_number"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                android:id="@+id/phone_number_holder"
+                style="@style/Theme.ams.Register.Card"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/phone_number"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:hint="@string/phone_number"
+                    android:inputType="phone" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <include
+                android:id="@+id/error_email"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                style="@style/Theme.ams.Register.Card"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/email"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:hint="@string/account_email"
+                    android:inputType="textEmailAddress" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/register_registered_error"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <include
+                    android:id="@+id/error_email_registered"
+                    layout="@layout/error_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone" />
+
+                <com.mobisolutions.ams.uikit.widget.CustomTextView
+                    style="@style/Theme.McD.Error.Text"
+                    android:focusable="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:text="@string/already_registered" />
+
+                <com.mobisolutions.ams.uikit.widget.CustomTextView
+                    android:id="@+id/register_reset_password"
+                    style="@style/Theme.McD.Error.Text"
+                    android:focusable="true"
+                    android:paddingLeft="@dimen/default_margin"
+                    android:text="@string/reset_password"
+                    android:textColor="@color/mcd_text_error" />
+            </LinearLayout>
+
+
+            <include
+                android:id="@+id/error_password"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                style="@style/Theme.ams.Register.Card"
+                app:passwordToggleContentDescription="@string/acs_display_password_toggle"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/password"
+                    style="@style/Theme.ams.Text.Input.Password.Center"
+                    android:hint="@string/account_password"
+                    android:inputType="textPassword" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <include
+                android:id="@+id/error_address"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                style="@style/Theme.ams.Register.Card"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/address"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:hint="@string/confirm_address"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPersonName|textCapSentences" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/content_holder"
+            android:orientation="vertical">
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/register"
+                style="@style/Theme.ams.Text.Button.Large.Disabled"
+                android:background="@drawable/gradient_yellow_button_disabled"
+                android:clickable="false"
+                android:text="@string/submit_button" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

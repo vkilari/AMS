@@ -1,0 +1,105 @@
+{"calendar": [
+	{
+		"year": "2017",
+		"date": "2017-12-24 08:01:49",
+		"title": "GBM",
+		"type": "Meeting",
+		"description": "This is General Body Meeting"
+
+	},
+	{
+		"year": "2017",
+		"date": "2017-11-5 08:01:49",
+		"title": "GBM",
+		"type": "Meeting",
+		"description": "This is General Body Meeting"
+
+	},
+	{
+		"year": "2017",
+		"date": "2017-10-10 08:01:49",
+		"title": "GBM",
+		"type": "Meeting",
+		"description": "This is General Body Meeting"
+
+	},
+	{
+		"year": "2018",
+		"date": "2018-1-1 08:01:49",
+		"title": "GBM",
+		"type": "Meeting",
+		"description": "This is General Body Meeting"
+
+	},
+	{
+		"year": "2018",
+		"date": "2018-1-5 08:01:49",
+		"title": "Invitation",
+		"type": "Meeting",
+		"description": "December 31st Invitation"
+
+	}
+
+]
+}
+
+
+/*
+{"calendar_year": [
+	{
+		"year": "2017",
+		"months": [
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			},
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			}
+		]
+
+	},
+	{
+		"year": "2017",
+		"months": [
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			},
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			}
+		]
+
+	},
+	{
+		"year": "2017",
+		"months": [
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			},
+			{
+				"date": "2017-11-5 08:01:49",
+				"title": "GBM",
+				"type": "Meeting",
+				"description": "This is General Body Meeting"
+			}
+		]
+
+	}
+
+]
+}*/

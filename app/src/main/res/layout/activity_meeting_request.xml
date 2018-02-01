@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_gap_5dp"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_gap_10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:textColor="#000"
+                        android:text="Date:"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/meetingDate"
+                        android:hint="01-01-2017"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:focusableInTouchMode="false"
+                        android:inputType="date"
+                        android:background="@drawable/edittext_shape"/>
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_gap_5dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:textColor="#000"
+                        android:text="Time:"/>
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/meetingTime"
+                        android:focusableInTouchMode="false"
+                        android:inputType="time"
+                        android:hint="7:30PM"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:padding="5dp"
+                        android:singleLine="true"
+                        android:background="@drawable/edittext_shape"/>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_gap_10dp"
+                android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:textColor="#000"
+                        android:text="Attendies:"/>
+
+
+                    <Spinner
+                        android:id="@+id/meetingAttendies"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/meeting_attendies"
+                        style="@style/spinner_style"
+                        android:padding="5dp"
+                        >
+
+                    </Spinner>
+
+                    <!--<Spinner-->
+                        <!--android:id="@+id/meetingAttendies"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:entries="@array/meeting_attendies"-->
+                        <!--android:background="@drawable/edittext_shape"-->
+                        <!--android:spinnerMode="dropdown"-->
+                        <!--android:padding="5dp" />-->
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_gap_5dp"
+                    android:layout_weight="0.5"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_gap_5dp"
+                        android:textColor="#000"
+                        android:text="Meeting Type:"/>
+
+
+                    <Spinner
+                        android:id="@+id/meetingTypes"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:entries="@array/meeting_Types"
+                        android:background="@drawable/edittext_shape"
+                        android:padding="5dp" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_gap_10dp"
+                android:textColor="#000"
+                android:text="Title:"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meetingTitle"
+                android:hint="General Body Meeting"
+                android:layout_marginTop="@dimen/margin_gap_5dp"
+                android:padding="5dp"
+                android:singleLine="true"
+                android:background="@drawable/edittext_shape"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_gap_10dp"
+                android:textColor="#000"
+                android:text="Description:"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meetingDesc"
+                android:hint="General Body Meeting"
+                android:padding="5dp"
+                android:lines="5"
+                android:layout_marginTop="@dimen/margin_gap_5dp"
+                android:background="@drawable/edittext_shape"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_gap_10dp"
+                android:textColor="#000"
+                android:text="Agenda:"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/meetingAgenda"
+                android:hint="General Body Meeting"
+                android:lines="5"
+                android:padding="5dp"
+                android:layout_marginTop="@dimen/margin_gap_5dp"
+                android:background="@drawable/edittext_shape"/>
+
+
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.mobisolutions.ams.uikit.widget.StandardButton
+            android:id="@+id/send_meeting_request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:text="Send"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+

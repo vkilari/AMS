@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?><!-- Error Layout -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Theme.Error.Holder"
+    android:focusable="true">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/error_icon"-->
+        <!--style="@style/Theme.McD.Error.Image"-->
+        <!--android:focusable="false" />-->
+
+    <com.mobisolutions.ams.uikit.widget.CustomTextView
+        android:id="@+id/mcd_error_text"
+        style="@style/Theme.AMS.Error.Text"
+        android:focusable="false"
+        tools:text="This is a multiline error message visible only during development, do no panic." />
+</LinearLayout><!-- Error Layout -->

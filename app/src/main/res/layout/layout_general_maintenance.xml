@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+
+    <LinearLayout
+        android:layout_height="@dimen/margin_gap_30dp"
+        android:layout_width="match_parent"
+        android:drawSelectorOnTop="false"
+        android:isScrollContainer="false"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal"
+        android:id="@+id/date_layout"
+        android:background="@color/ams_dark_cyan"
+        android:gravity="center_vertical"
+        android:layout_weight="0">
+
+        <TextView android:id="@+id/year_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/button_text_midium"
+            android:text="Year:"
+            android:gravity="center_horizontal"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            />
+
+        <TextView android:id="@+id/month_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            style="@style/button_text_midium"
+            android:text="Month:"
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+        <TextView android:id="@+id/day_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center_horizontal"
+            style="@style/button_text_midium"
+            android:text="Day:"
+            android:layout_weight="1"
+            android:textStyle="bold"
+            />
+
+
+
+    </LinearLayout>
+    <FrameLayout android:id="@+id/maintenance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date_layout"
+        android:layout_marginTop="@dimen/margin_gap_5dp"
+        android:visibility="visible"
+        android:layout_above="@id/total_layout">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_weight="1"/>
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/add_general_maintenance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="@dimen/margin_gap_20dp"
+            android:layout_marginBottom="70dp"
+            android:src="@android:drawable/ic_input_add"
+            />
+    </FrameLayout>
+
+    <FrameLayout android:id="@+id/individual_maintenance_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/date_layout"
+        android:layout_marginTop="@dimen/margin_gap_5dp"
+        android:visibility="gone"
+        android:layout_above="@id/total_layout">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/maintenance_individual"/>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/individual_maintenance_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="vertical"
+            android:layout_weight="1"/>1
+
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:drawSelectorOnTop="false"
+        android:isScrollContainer="false"
+        android:orientation="horizontal"
+        android:id="@+id/total_layout"
+        android:layout_weight="0">
+        <Button android:id="@+id/general_maintain_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/button_text_midium"
+            android:text="Total"
+            android:background="@color/ams_dark_cyan"
+            />
+
+
+        <com.mobisolutions.ams.uikit.widget.CustomEditText
+            android:id="@+id/general_maintain_value"
+            style="@style/Theme.ams.Title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="15dp"
+            android:layout_weight="0.5"
+            android:textStyle="bold"
+            android:layout_margin="3dp"
+            android:focusable="false"
+            android:hint="₹"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_shape"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:drawSelectorOnTop="false"
+        android:isScrollContainer="false"
+        android:orientation="horizontal"
+        android:id="@+id/send_sms_layout"
+        android:layout_weight="0">
+        <Button android:id="@+id/send_sms_label"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            style="@style/button_text_midium"
+            android:text="@string/send_sms_label"
+            android:background="@color/ams_dark_cyan"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

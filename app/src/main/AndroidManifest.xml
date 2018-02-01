@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.mobisolutions.ams">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <permission
+        android:name="com.mobisolutions.ams.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="com.mobisolutions.ams.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".AMSApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name=".SplashActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".home.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".login.LoginActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".calendar.CalendarActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".directions.DirectionsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".contacts.ContactsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".contacts.ContactDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".home.BannerDetailsActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".mobilet.MobiletActivity" android:screenOrientation="portrait"/>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <receiver
+            android:name="com.amazonaws.mobileconnectors.pinpoint.targeting.notification.PinpointNotificationReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.amazonaws.intent.fcm.NOTIFICATION_OPEN" />
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".amc.AMCActivity" />
+        <activity android:name=".services.ServicesActivity" />
+        <activity android:name=".mygrocery.MyGroceryActivity" />
+        <activity android:name=".services.ServiceDetailsActivity" />
+        <activity
+            android:name=".meetings.MeetingRequestActivity"
+            android:label="@string/title_activity_meeting_request"
+            ></activity>
+        <activity android:name=".maintenance.GeneralMaintenanceActivity"
+            android:windowSoftInputMode="adjustPan"/>
+    </application>
+
+</manifest>

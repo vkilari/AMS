@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/container">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.8">
+
+            <com.mobisolutions.carouselview.CarouselView
+            android:id="@+id/customCarouselView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:disableAutoPlayOnUserInteraction="true"
+            app:fillColor="#FFFFFFFF"
+            app:pageColor="#00000000"
+            app:radius="6dp"
+            app:strokeColor="#FF777777"
+            app:strokeWidth="1dp" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/categoryLayout"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <GridView
+            android:id="@+id/groceryGridView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#e5e5e5"
+            android:horizontalSpacing="1dp"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="1dp" >
+            </GridView>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="48dp"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_centerInParent="true"
+                android:visibility="gone"
+                android:indeterminateDrawable="@drawable/circular_progressbar"
+                android:indeterminate="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+
+
+
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    <!--android:weightSum="2"-->
+    <!--android:id="@+id/container"-->
+    <!--&gt;-->
+    <!--<LinearLayout-->
+        <!--android:id="@+id/carouselLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="0.75"-->
+        <!--android:layout_marginTop="1dp">-->
+
+    <!--<com.mobisolutions.carouselview.CarouselView-->
+        <!--android:id="@+id/customCarouselView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--app:disableAutoPlayOnUserInteraction="true"-->
+        <!--app:fillColor="#FFFFFFFF"-->
+        <!--app:pageColor="#00000000"-->
+        <!--app:radius="6dp"-->
+        <!--app:strokeColor="#FF777777"-->
+        <!--app:strokeWidth="1dp" />-->
+    <!--</LinearLayout>-->
+
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/categorylLayout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_below="@id/carouselLayout"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1.15"-->
+        <!--android:layout_marginTop="1dp">-->
+
+
+        <!--<GridView-->
+            <!--android:id="@+id/groceryGridView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="#e5e5e5"-->
+            <!--android:horizontalSpacing="1dp"-->
+            <!--android:numColumns="auto_fit"-->
+            <!--android:stretchMode="columnWidth"-->
+            <!--android:verticalSpacing="1dp" >-->
+
+        <!--</GridView>-->
+
+    <!--</LinearLayout>-->
+
+<!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="0dp"-->
+    <!--android:background="@color/mcd_deals_relative_blue"-->
+    <!--android:layout_below="@id/categorylLayout"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_gravity="bottom"-->
+    <!--android:gravity="bottom"-->
+    <!--android:layout_weight="0.10">-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center_horizontal|center_vertical"-->
+        <!--android:layout_gravity="center_vertical"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:textStyle="bold"-->
+        <!--android:textColor="#fff"-->
+        <!--android:textSize="16sp"-->
+        <!--android:text="Feedback"/>-->
+<!--</LinearLayout>-->
+
+
+<!--</RelativeLayout>-->

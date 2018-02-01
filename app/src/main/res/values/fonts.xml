@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Created by "Yoganandh"
+  -->
+<resources>
+    <string name="ams_font_regular">ArchSans-Regular.otf</string>
+    <string name="ams_font_bold">ArchSans-Bold.otf</string>
+    <string name="ams_font_bold_extra">ArchSans-ExtraBold.otf</string>
+    <string name="ams_font_bold_italic">ArchSans-BoldItalic.otf</string>
+    <string name="ams_font_italic">ArchSans-Italic.otf</string>
+    <string name="ams_font_light">ArchSans-Light.otf</string>
+    <string name="ams_font_light_italic">ArchSans-LightItalic.otf</string>
+    <string name="ams_font_thin">ArchSans-Thin.otf</string>
+    <string name="ams_font_thin_italic">ArchSans-ThinItalic.otf</string>
+</resources>

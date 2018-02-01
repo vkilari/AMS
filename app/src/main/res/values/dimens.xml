@@ -1,0 +1,118 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="profile_width">75dp</dimen>
+    <dimen name="profile_height">75dp</dimen>
+
+
+    <dimen name="components_app_bar_height_portrait">56dp</dimen>
+    <dimen name="components_app_bar_height_landscape">48dp</dimen>
+    <dimen name="components_app_bar_padding_portrait">8dp</dimen>
+    <dimen name="components_app_bar_padding_landscape">4dp</dimen>
+    <dimen name="components_app_bar_vertical_margin">16dp</dimen>
+    <dimen name="components_app_bar_shadow_height">3dp</dimen>
+    <dimen name="components_app_bar_padding_to_text">24dp</dimen>
+    <dimen name="components_app_bar_padding">8dp</dimen>
+    <dimen name="components_app_bar_height">56dp</dimen>
+    <dimen name="components_app_bar_title_margin">72dp</dimen>
+
+    <dimen name="text_size_display_two">56sp</dimen>
+    <dimen name="text_size_display_three">40sp</dimen>
+
+    <dimen name="text_size_body">16sp</dimen>
+    <dimen name="text_size_body_bold">16sp</dimen>
+    <dimen name="text_size_disclaimer">12sp</dimen>
+    <dimen name="text_size_label">14sp</dimen>
+    <dimen name="text_size_label_bold">14sp</dimen>
+    <dimen name="text_size_button">14sp</dimen>
+
+    <dimen name="text_size_title">20sp</dimen>
+
+    <dimen name="default_margin">13dp</dimen>
+    <dimen name="default_margin_2x">34dp</dimen>
+    <dimen name="ams_text_default">15sp</dimen>
+    <dimen name="ams_text_headline">25sp</dimen>
+    <dimen name="ams_text_label">18sp</dimen>
+
+    <dimen name="ams_text_filter">18sp</dimen>
+    <dimen name="ams_text_input">18sp</dimen>
+    <dimen name="ams_text_input_hint">15sp</dimen>
+    <dimen name="ams_text_input_password">24sp</dimen>
+
+
+    <!-- Registration Input Field -->
+    <dimen name="ams_input_padding_top">2dp</dimen>
+    <dimen name="ams_input_padding_bottom">5dp</dimen>
+    <dimen name="ams_input_margin_bottom">8dp</dimen>
+    <dimen name="ams_cursor_size">2sp</dimen>
+
+    <dimen name="button_large_radius">1dp</dimen>
+    <dimen name="ams_button_large_padding">18dp</dimen>
+    <dimen name="ams_toolbar_height">48dp</dimen>
+
+    <dimen name="ams_line_separator">1dp</dimen>
+    <dimen name="ams_text_link">32sp</dimen>
+    <dimen name="ams_text_link_padding">10dp</dimen>
+    <dimen name="ams_text_link_small">15sp</dimen>
+    <dimen name="ams_text_link_medium">18sp</dimen>
+    <dimen name="ams_label_margin">10dp</dimen>
+    <dimen name="ams_text_headline_sub">18sp</dimen>
+    <dimen name="ams_text_textSwitcher">18sp</dimen>
+    <dimen name="forgot_error_drawable_padding">8dp</dimen>
+    <dimen name="components_button_height">36dp</dimen>
+    <dimen name="components_button_min_width">88dp</dimen>
+    <dimen name="components_button_text_size">14sp</dimen>
+    <dimen name="cornerRadius">2dp</dimen>
+    <dimen name="components_button_text_padding_left">16dp</dimen>
+    <dimen name="components_button_text_padding_right">16dp</dimen>
+    <dimen name="nav_header_profile_img_height">75dp</dimen>
+
+    <dimen name="margin_gap_1dp">1dp</dimen>
+    <dimen name="margin_gap_3dp">3dp</dimen>
+    <dimen name="margin_gap_6dp">6dp</dimen>
+    <dimen name="margin_gap_8dp">8dp</dimen>
+    <dimen name="margin_gap_5dp">5dp</dimen>
+    <dimen name="margin_gap_7dp">7dp</dimen>
+    <dimen name="margin_gap_10dp">10dp</dimen>
+    <dimen name="margin_gap_16dp">16dp</dimen>
+    <dimen name="margin_gap_12dp">12dp</dimen>
+    <dimen name="margin_gap_15dp">15dp</dimen>
+    <dimen name="margin_gap_20dp">20dp</dimen>
+    <dimen name="margin_gap_25dp">25dp</dimen>
+    <dimen name="margin_gap_30dp">30dp</dimen>
+    <dimen name="margin_gap_35dp">35dp</dimen>
+    <dimen name="margin_gap_40dp">40dp</dimen>
+    <dimen name="margin_gap_45dp">45dp</dimen>
+    <dimen name="margin_gap_50dp">50dp</dimen>
+    <dimen name="margin_gap_80dp">80dp</dimen>
+    <dimen name="margin_gap_100dp">100dp</dimen>
+    <dimen name="margin_gap_120dp">120dp</dimen>
+    <dimen name="margin_gap_133dp">133dp</dimen>
+
+    <dimen name="section_padding">7dp</dimen>
+    <dimen name="section_text_size">20sp</dimen>
+    <dimen name="item_height">100dp</dimen>
+    <dimen name="item_margin">3dp</dimen>
+
+    <dimen name="section_text_padding_left">15dp</dimen>
+
+
+    <dimen name="activity_padding_horizontal">16dp</dimen>
+    <dimen name="padd_10">10dp</dimen>
+    <dimen name="ic_delete">30dp</dimen>
+    <dimen name="thumbnail">90dp</dimen>
+
+    <dimen name="list_item_height">48dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="list_item_left_margin">72dp</dimen>
+
+    <dimen name="row_padding_vertical">10dp</dimen>
+
+
+</resources>

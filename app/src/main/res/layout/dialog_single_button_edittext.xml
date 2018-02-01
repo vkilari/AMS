@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/dialog_background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shape"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_gap_10dp">
+
+        <com.mobisolutions.ams.uikit.widget.CustomTextView
+            android:id="@+id/dialog_title"
+            style="@style/Theme.ams.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Add Record"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_gap_15dp"
+            android:layout_marginBottom="@dimen/margin_gap_15dp"
+            android:background="@color/colorPrimaryDark"/>
+
+
+        <com.mobisolutions.ams.uikit.widget.CustomEditText
+            android:id="@+id/add_record"
+            style="@style/Theme.ams.Title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_gap_40dp"
+            android:hint="New Record"
+            android:layout_gravity="right"
+            android:paddingLeft="@dimen/margin_gap_10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_shape"
+            />
+
+        <com.mobisolutions.ams.uikit.widget.CustomEditText
+            android:id="@+id/add_description"
+            style="@style/Theme.ams.Title"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/margin_gap_10dp"
+            android:layout_height="@dimen/margin_gap_40dp"
+            android:paddingLeft="@dimen/margin_gap_10dp"
+            android:hint="Description"
+            android:layout_gravity="right"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/edittext_shape"
+            />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/margin_gap_15dp"
+            android:layout_marginBottom="@dimen/margin_gap_15dp"
+            android:background="@color/colorPrimaryDark"/>
+
+        <com.mobisolutions.ams.uikit.widget.StandardButton
+            android:id="@+id/positive_button"
+            style="@style/ams.button.flat"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/ams_black"
+            android:textSize="25sp"
+            android:text="ADD"
+            />
+    </LinearLayout>
+</ScrollView>

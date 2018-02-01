@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+        <com.mobisolutions.ams.uikit.widget.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_gap_30dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:text="AMC Request"/>
+
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_view_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:layout_margin="@dimen/margin_gap_10dp"
+            card_view:cardCornerRadius="3dp"
+            card_view:contentPadding="10dp">
+
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Theme.ams.Title"
+                android:textStyle="bold"
+                android:text="Select below services:"/>
+
+
+            <LinearLayout
+                android:id="@+id/linear_amc"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_gap_40dp"
+                android:layout_marginBottom="@dimen/margin_gap_100dp"
+                >
+
+            </LinearLayout>
+
+            <com.mobisolutions.ams.uikit.widget.StandardButton
+                android:id="@+id/amc_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginTop="@dimen/margin_gap_50dp"
+                android:background="@color/mcd_deals_relative"
+                android:textColor="@color/white"
+                android:text="Submit"/>
+
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+

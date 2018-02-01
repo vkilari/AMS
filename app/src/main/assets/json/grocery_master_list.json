@@ -1,0 +1,262 @@
+{
+  "timestamp": "2017-12-15",
+  "version": "1.0",
+  "categories": [
+    {
+      "id": "1",
+      "name": "Fruits",
+      "image": "http:google.com/test.png",
+      "description": "This is sample desc",
+      "items": [
+        {
+          "id": "1",
+          "name": "Apple",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "2",
+          "name": "Apricot",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "3",
+          "name": "Avocado",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "4",
+          "name": "Banana",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "5",
+          "name": "Blackberry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "6",
+          "name": "Blueberry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "7",
+          "name": "Cranberry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "8",
+          "name": "Cherry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "9",
+          "name": "Guava",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "10",
+          "name": "Kiwifruit",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "11",
+          "name": "Lemon",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "12",
+          "name": "Mango",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "13",
+          "name": "Watermelon",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "14",
+          "name": "Orange",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "15",
+          "name": "Papaya",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "16",
+          "name": "Peach",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "17",
+          "name": "Pineapple",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "18",
+          "name": "Raspberry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "19",
+          "name": "Strawberry",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "20",
+          "name": "Grapes",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "Dry Fruits",
+      "image": "http:google.com/test.png",
+      "description": "Thisis sample desc",
+      "items": [
+        {
+          "id": "1",
+          "name": "Cashew",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "2",
+          "name": "Raisin",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "3",
+          "name": "Almond",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "4",
+          "name": "Walnut",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "Vegetables",
+      "image": "http:google.com/test.png",
+      "description": "Thisis sample desc",
+      "items": [
+        {
+          "id": "1",
+          "name": "Carrot",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "2",
+          "name": "Tomato",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "3",
+          "name": "Cabbage",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "4",
+          "name": "Brocli",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "name": "Groceries",
+      "image": "http:google.com/test.png",
+      "description": "Thisis sample desc",
+      "items": [
+        {
+          "id": "1",
+          "name": "Salt",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "2",
+          "name": "Rice",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "3",
+          "name": "RedGram",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "4",
+          "name": "Lentils",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "name": "Misc",
+      "image": "http:google.com/test.png",
+      "description": "Thisis sample desc",
+      "items": [
+        {
+          "id": "1",
+          "name": "Soap",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "2",
+          "name": "Shampoo",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "3",
+          "name": "Handwash",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        },
+        {
+          "id": "4",
+          "name": "Moisturiser",
+          "image": "http:google.com/test.png",
+          "description": "Thisis sample desc"
+        }
+      ]
+    }
+  ]
+}

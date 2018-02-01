@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:weightSum="3"
+           android:orientation="vertical">
+
+           <com.mobisolutions.ams.uikit.widget.CustomTextView
+               android:id="@+id/living_status"
+               android:layout_width="match_parent"
+               android:layout_height="@dimen/margin_gap_30dp"
+               android:textStyle="bold"
+               android:layout_gravity="center"
+               android:textColor="@color/white"
+               android:gravity="center"
+               android:background="@color/colorPrimary"
+               android:text="@string/contacts_living_status_label"/>
+
+
+           <android.support.v7.widget.CardView
+               android:id="@+id/card_view_photo"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_gravity="top"
+               android:layout_weight="2.25"
+               android:layout_marginTop="@dimen/margin_gap_10dp"
+               android:layout_marginLeft="@dimen/margin_gap_10dp"
+               android:layout_marginRight="@dimen/margin_gap_10dp"
+               card_view:cardCornerRadius="3dp"
+               card_view:contentPadding="10dp">
+
+
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:id="@+id/contact_image"
+                       android:layout_width="match_parent"
+                       android:layout_height="150dp"
+                       android:background="@mipmap/image_3"/>
+
+                   <RelativeLayout
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="@dimen/margin_gap_10dp">
+                   <ImageView
+                       android:id="@+id/owener_imageView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:src="@mipmap/icon_dots_black"
+                        />
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/owener_title"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignBottom="@id/owener_imageView"
+                       android:textStyle="bold"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/owener_details_label"/>
+                   </RelativeLayout>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/owener_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/owener_title"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/owener_name"/>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/owener_phone_number"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/owener_name"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/owener_phone"/>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/owener_email"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/owener_phone_number"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/owener_email"/>
+               </LinearLayout>
+
+           </android.support.v7.widget.CardView>
+
+           <android.support.v7.widget.CardView
+               android:id="@+id/tenent_card_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_weight="0.75"
+               android:layout_margin="@dimen/margin_gap_10dp"
+               android:layout_alignBottom="@id/card_view_photo"
+               card_view:cardCornerRadius="3dp"
+               card_view:contentPadding="10dp">
+
+               <RelativeLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:gravity="center_vertical"
+                   android:orientation="vertical">
+
+                   <ImageView
+                       android:id="@+id/tenant_imageView"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_alignParentTop="true"
+                       android:src="@mipmap/icon_dots_black"
+                       />
+
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/tenant_title"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       style="@style/Theme.ams.Title"
+                       android:textStyle="bold"
+                       android:text="@string/tenent_details_label"/>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/tenant_name"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/tenant_title"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/tenent_name"/>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/tenant_phone_number"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/tenant_name"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/tenent_phone"/>
+
+                   <com.mobisolutions.ams.uikit.widget.CustomTextView
+                       android:id="@+id/tenant_email"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_below="@id/tenant_phone_number"
+                       android:layout_marginTop="@dimen/margin_gap_5dp"
+                       style="@style/Theme.ams.Title"
+                       android:text="@string/tenent_email"/>
+
+
+               </RelativeLayout>
+
+           </android.support.v7.widget.CardView>
+
+
+
+
+
+
+       </LinearLayout>
+
+</LinearLayout>

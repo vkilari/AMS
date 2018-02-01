@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:overScrollMode="never"
+    android:scrollbars="none"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/view_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/default_margin">
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                style="@style/Theme.ams.Headline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/default_margin"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:text="@string/otp_header">
+
+                <requestFocus />
+            </com.mobisolutions.ams.uikit.widget.CustomTextView>
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/otp_sub_header"
+                style="@style/Theme.ams.Headline.Sub"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/default_margin"
+                android:layout_marginTop="@dimen/ams_label_margin"
+                android:gravity="center"
+                android:text="@string/otp_sub_header"
+                android:textColor="@color/ams_black"
+                android:textSize="@dimen/ams_text_textSwitcher" />
+
+            <include
+                android:id="@+id/error_email"
+                layout="@layout/error_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
+                android:id="@+id/email_input_layout"
+                style="@style/Theme.ams.Register.Card"
+                app:hintTextAppearance="@style/Theme.ams.Text.Hint">
+
+                <com.mobisolutions.ams.uikit.widget.CustomEditText
+                    android:id="@+id/otp"
+                    style="@style/Theme.AMS.Text.Input.Center"
+                    android:hint="@string/otp_hint"
+                    android:inputType="number" />
+            </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/otp_resend_link"
+                style="@style/Theme.ams.Link.Medium"
+                android:contentDescription="@string/acs_register_login_msg"
+                android:focusable="true"
+                android:gravity="center"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/otp_resend"
+                android:textSize="@dimen/ams_text_default" />
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/otp_error_text"
+                style="@style/Theme.AMS.Error.Text"
+                android:layout_marginTop="@dimen/ams_label_margin"
+                android:drawableLeft="@mipmap/notification_icon"
+                android:drawablePadding="@dimen/forgot_error_drawable_padding"
+                android:textColorHighlight="@color/ams_white"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/view_container"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <com.mobisolutions.ams.uikit.widget.CustomTextView
+                android:id="@+id/submit_registration"
+                style="@style/Theme.ams.Text.Button.Large.Disabled"
+                android:background="@drawable/gradient_yellow_button_disabled"
+                android:contentDescription="@string/acs_reset_password_button_disable"
+                android:text="@string/register" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>
+

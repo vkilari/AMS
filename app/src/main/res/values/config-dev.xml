@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <!--- Spreo Maps display -->
+    <string name="google_map_key_debug"></string>
+    <!--- Omni Service URL  -->
+    <string name="mobile_domain">http://dc1vk.kpvsolutions.in:9080/apartmentservices</string>
+    <!--- For Google Plus login  -->
+    <string name="google_plus_webclient_id"></string>
+    <!--- Play store appid for swrve events  -->
+    <string name="appid"></string>
+
+</resources>

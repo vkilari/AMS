@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:c1="http://schemas.android.com/apk/res-auto">
+    <!-- Primary Flat -->
+    <item c1:primary="true" android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/ams_lightest_gray"/>
+        </shape>
+    </item>
+    <item c1:primary="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/ams_light_light_gray"/>
+        </shape>
+    </item>
+    <item c1:primary="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/flat_button_default"/>
+        </shape>
+    </item>
+
+    <!-- Secondary Flat -->
+    <item c1:secondary="true" android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/ams_lightest_gray"/>
+        </shape>
+    </item>
+    <item c1:secondary="true" android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/ams_light_light_gray"/>
+        </shape>
+    </item>
+    <item c1:secondary="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/cornerRadius"/>
+            <solid android:color="@color/flat_button_default"/>
+        </shape>
+    </item>
+</selector>

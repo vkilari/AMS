@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_shape"
+        android:orientation="vertical"
+        android:paddingTop="19dp">
+
+        <com.mobisolutions.ams.uikit.widget.CustomTextView
+            android:id="@+id/dialog_title"
+            style="@style/Theme.ams.Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+
+        <com.mobisolutions.ams.uikit.widget.CustomTextView
+            android:id="@+id/dialog_message"
+            style="@style/Theme.ams.Text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"/>
+        <com.capitalone.core.ui.components.FloatingHintEditText
+            android:id="@+id/dialog_editText"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+
+            android:layout_height="56dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:inputType="textNoSuggestions"
+            android:imeOptions="actionDone"/>
+
+        <com.mobisolutions.ams.uikit.widget.CustomTextView
+            style="@style/Theme.ams.Text"
+            android:id="@+id/dialog_editText_count"
+            android:gravity="right"
+            android:textColor="@color/ams_medium_gray"
+            android:visibility="gone"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <com.capitalone.core.ui.components.StandardButton
+                android:id="@+id/negative_button"
+                style="@style/ams.button.flat"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:secondary="true"/>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <com.mobisolutions.ams.uikit.widget.StandardButton
+                    android:id="@+id/positive_button"
+                    style="@style/ams.button.flat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    app:primary="true"/>
+
+                <com.mobisolutions.ams.uikit.widget.StandardProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:indeterminateOnly="true"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

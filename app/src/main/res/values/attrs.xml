@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <declare-styleable name="TypefaceTextView">
+        <attr name="typeface" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="isPassword" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StandardButtonView">
+        <attr name="typeface"/>
+        <attr name="active" format="boolean"/>
+        <attr name="primary" format="boolean"/>
+        <attr name="secondary" format="boolean"/>
+    </declare-styleable>
+
+
+</resources>

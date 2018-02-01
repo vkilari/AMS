@@ -1,0 +1,67 @@
+{
+  "response_code": "200",
+  "response_status": "success",
+  "home_service_categories": [
+    {
+      "service_region": "17.516437, 78.395314",
+      "service_description": "This is plumbing services",
+      "service_name": "Plumbing",
+      "service_id": "ser102",
+      "service_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/plumbing.jpg",
+      "service_details": {
+        "provider_mobile": "9550284999",
+        "provider_address": "Sri Shirdi Sai Nilayam, Plot no.243, Flat no.202",
+        "provider_email": "venkat.103@gmail.com",
+        "provider_name": "Venkat",
+        "provider_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+        "provider_region": "17.516437, 78.395314"
+      }
+    },
+    {
+      "service_region": "17.516437, 78.395314",
+      "service_description": "This is electrician services",
+      "service_name": "Electrician",
+      "service_id": "ser103",
+      "service_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/electrician.jpg",
+      "service_details": {
+        "provider_mobile": "9550284999",
+        "provider_address": "Sri Shirdi Sai Nilayam, Plot no.243, Flat no.202",
+        "provider_email": "venkat.103@gmail.com",
+        "provider_name": "Venkat",
+        "provider_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+        "provider_region": "17.516437, 78.395314"
+      }
+    },
+    {
+      "service_region": "17.516437, 78.395314",
+      "service_description": "This is painter services",
+      "service_name": "Painter",
+      "service_id": "ser104",
+      "service_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+      "service_details": {
+        "provider_mobile": "9550284999",
+        "provider_address": "Sri Shirdi Sai Nilayam, Plot no.243, Flat no.202",
+        "provider_email": "venkat.103@gmail.com",
+        "provider_name": "Venkat",
+        "provider_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+        "provider_region": "17.516437, 78.395314"
+      }
+    },
+    {
+      "service_region": "17.516437, 78.395314",
+      "service_description": "This is painter services",
+      "service_name": "Painter",
+      "service_id": "ser104",
+      "service_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+      "service_details": {
+        "provider_mobile": "9550284999",
+        "provider_address": "Sri Shirdi Sai Nilayam, Plot no.243, Flat no.202",
+        "provider_email": "venkat.103@gmail.com",
+        "provider_name": "Venkat",
+        "provider_image": "http://dc1vk.kpvsolutions.in:9080/apartmentservices/images/painter.jpg",
+        "provider_region": "17.516437, 78.395314"
+      }
+    }
+  ],
+  "timestamp": "2017-12-17"
+}

@@ -1,0 +1,34 @@
+{"categories": [
+  {
+  	"name": "Contacts",
+  	"color": "#1cc466",
+  	"image": "http://google.com/test.png"
+  },
+  {
+  	"name": "AMC",
+  	"color": "#ED3B25",
+  	"image": "http://google.com/test.png"
+  },
+  {
+  	"name": "Services",
+  	"color": "#589CE4",
+  	"image": "http://google.com/test.png"
+  },
+  {
+  	"name": "Calendar",
+  	"color": "#FE8234",
+  	"image": "http://google.com/test.png"
+  },
+  {
+  	"name": "First Kitchen",
+  	"color": "#fa315b",
+  	"image": "http://google.com/test.png"
+  },
+  {
+  	"name": "Maintenance",
+  	"color": "#FF0470A8",
+  	"image": "http://google.com/test.png"
+  }
+  
+]
+}

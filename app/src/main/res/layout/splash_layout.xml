@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Welcome to SSSN"
+            android:textSize="@dimen/text_size_display_two"
+            android:textColor="@color/colorPrimaryDark"
+            android:shadowColor="@color/mcd_digital_red"
+            android:shadowDx="2"
+            android:shadowDy="2"
+            android:shadowRadius="2"
+            android:gravity="center_vertical|center_horizontal"
+           />
+
+</LinearLayout>

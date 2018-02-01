@@ -1,0 +1,169 @@
+<resources>
+    <string name="app_name">Helpmatz</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+
+
+    <!-- API Methods -->
+    <string name="get_settings_method">settings</string>
+    <string name="get_contacts_method">getContacts</string>
+    <string name="update_contacts_method">updateContact</string>
+    <string name="get_banners_method">getBanner</string>
+    <string name="get_categories_method">getCategories</string>
+    <string name="get_maintenance_method">getMonthlyMaintenance</string>
+    <string name="insert_meeting">insert_meeting</string>
+    <string name="get_meetings_method">get_meetings_history</string>
+    <string name="update_meeting">update_meeting</string>
+    <string name="get_amc_method">get_amc</string>
+    <string name="get_request_amc_method">request_amc</string>
+    <string name="get_services">get_service</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="action_edit">Edit</string>
+    <string name="maintenance_individual">Individual Maintenance</string>
+    <string name="maintenance_general">General Maintenance</string>
+    <string name="maintenance_export">PDF Export</string>
+
+    <string name="cd_appbar_logo">Capital One Heading</string>
+    <string name="okay">Okay</string>
+    <string name="error">error</string>
+
+    <string name="register">REGISTER</string>
+    <string name="error_all_fields_req">All Fields Required</string>
+    <string name="account_first_name">First Name</string>
+    <string name="account_last_name">Last Name</string>
+    <string name="account_zip_code">ZIP code</string>
+    <string name="phone_number">Phone number</string>
+    <string name="account_email">Email</string>
+    <string name="already_registered">Already registered but can\'t sign in?</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="acs_display_password_toggle">display password</string>
+    <string name="account_password">Password</string>
+    <string name="confirm_address">Address</string>
+    <string name="acs_back">Back</string>
+    <string name="acs_close">Close</string>
+    <string name="error_invalid_password">Password must include uppercase and lowercase letters, and at least one number.</string>
+
+    <string name="log_in_header">Log In</string>
+    <string name="email_phone">Email</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="login_dont_have_account">Don\'t have an account?</string>
+    <string name="acs_register_login_msg">Register</string>
+    <string name="log_in_button">LOG IN</string>
+
+    <string name="reset_password_header">Reset your password</string>
+    <string name="reset_password_sub_header">Enter your email address and we\'ll \n send you a temporary password.</string>
+    <string name="acs_reset_password_button">Reset Password button</string>
+    <string name="acs_reset_password_button_disable">Reset Password button disabled</string>
+    <string name="reset_password_button">Reset Password</string>
+    <string name="phone">Phone</string>
+    <string name="acs_button">button</string>
+    <string name="acs_button_disabled">button disabled</string>
+    <string name="error_registration_invalid_email">Please enter valid email</string>
+    <string name="error_valid_mobile">Please enter a valid Mobile Number.</string>
+    <string name="acs_error_string">Error</string>
+    <string name="error_no_network_connectivity">No network connectivity</string>
+    <string name="cd_loading_indicator">Loading indicator. Content is loading.</string>
+    <string name="default_error_title">Error</string>
+    <string name="fall_through_message">Looks like we need to fix something, so we’re working on it.</string>
+    <string name="ok_button_text">OK</string>
+    <string name="something_went_wrong_message">Something Went Wrong</string>
+    <string name="permissions_title">We Need Your Permission</string>
+    <string name="_continue">CONTINUE</string>
+    <string name="permissions_request_positive">@string/_continue</string>
+    <string name="error_registration_invalid_email_ios">Please enter valid email</string>
+    <string name="error_registration_invalid_first_name">Please enter a valid first name.</string>
+    <string name="invalid_phone">Enter %s digits phone number</string>
+    <string name="acs_to">to</string>
+    <string name="registering">Registering…</string>
+    <string name="otp_header">Enter OTP</string>
+    <string name="otp_sub_header">Enter One Time Password (OTP) sent to your mobile number %1$s</string>
+    <string name="otp_hint">OTP</string>
+    <string name="otp_resend">Resend OTP</string>
+    <string name="submit_button">Submit</string>
+    <string name="otp_title">One Time Password</string>
+    <string name="navdrawer_description_a11y">Navigation Drawer used to switch between major features of the application</string>
+
+    <!-- AMC -->
+    <string name="amc_header">AMC</string>
+
+    <!-- Services -->
+    <string name="services_header">Services</string>
+
+    <!-- My Grocery -->
+    <string name="grocery_header">My Grocery</string>
+
+    <!-- AMC -->
+    <string name="amc_elevator">Elevator</string>
+    <string name="amc_generator">Generator</string>
+    <string name="amc_plumber">Plumber</string>
+    <string name="amc_electriction">Electriction</string>
+    <string name="amc_watertank">Water Tanks</string>
+
+    <string name="add_row_label">Add</string>
+    <string name="item_row_label">Enter Label</string>
+    <string name="item_row_value">Enter Value</string>
+
+    <string name="general_maintenance_record_add">ADD</string>
+    <string name="general_maintenance_record_label">ADD RECORD</string>
+
+    <string name="send_sms_label">send SMS</string>
+
+    <string name="contacts_label">Contacts</string>
+    <string name="contacts_details_label">Contact Details</string>
+    <string name="contacts_living_status_label">Living Status: %1$s</string>
+    <string name="owener_details_label">Owener Details:</string>
+    <string name="tenent_details_label">Tenant Details:</string>
+    <string name="owener_name">Name: %1$s</string>
+    <string name="owener_phone">Phone: %1$s</string>
+    <string name="owener_email">Email: %1$s</string>
+    <string name="tenent_name">Name: %1$s</string>
+    <string name="tenent_phone">Phone: %1$s</string>
+    <string name="tenent_email">Email: %1$s</string>
+
+    <string name="edit_label">Edit</string>
+    <string name="done_label">Done</string>
+
+    <string-array name="image_ids">
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+        <item>@drawable/image_3</item>
+        <item>@drawable/image_4</item>
+        <item>@drawable/image_5</item>
+        <item>@drawable/image_1</item>
+        <item>@drawable/image_2</item>
+
+    </string-array>
+    <string name="title_activity_meeting_request">MeetingRequestActivity</string>
+
+    <string-array name="meeting_attendies">
+        <item>All</item>
+        <item>oweners</item>
+        <item>Tenents</item>
+    </string-array>
+
+    <string-array name="meeting_Types">
+        <item>GBM</item>
+        <item>Notice</item>
+        <item>Invitation</item>
+    </string-array>
+
+    <string name="amc_request">AMC Request</string>
+    <string name="amc_request_content">Helpmetz executive will reach you soon to discuss further details..</string>
+    <string name="amc_request_no_content">Please select at least one service.</string>
+    <string name="amc_request_dialog_button">@string/_continue</string>
+    <string name="dialog_ok_button">OK</string>
+
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+
+
+</resources>

@@ -1,0 +1,311 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.ams.Title" parent="android:Widget.TextView">
+        <item name="typeface">@string/ams_font_light</item>
+        <item name="android:textColor">@color/mcd_color_text_primary</item>
+        <item name="android:textSize">@dimen/text_size_title</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.ams.Text" parent="android:Widget.TextView">
+        <item name="typeface">@string/ams_font_light</item>
+        <item name="android:textColor">@color/mcd_color_text_primary</item>
+        <item name="android:textSize">@dimen/ams_text_default</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="ams.button" parent="buttonBase"></style>
+
+    <style name="buttonBase" parent="@android:style/Widget.Button">
+        <item name="android:minHeight">@dimen/components_button_height</item>
+        <item name="android:minWidth">@dimen/components_button_min_width</item>
+        <item name="android:maxHeight">@dimen/components_button_height</item>
+        <item name="android:height">@dimen/components_button_height</item>
+        <item name="android:textSize">@dimen/components_button_text_size</item>
+        <item name="android:shadowColor">@null</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ams.button.flat">
+        <item name="android:background">@drawable/flat_button</item>
+        <item name="android:textColor">@drawable/flat_button_text_color</item>
+        <item name="android:height">@dimen/components_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/components_button_text_size</item>
+        <item name="android:paddingLeft">@dimen/components_button_text_padding_left</item>
+        <item name="android:paddingRight">@dimen/components_button_text_padding_right</item>
+    </style>
+
+
+    <style name="Theme.AMS.Text.Regular" parent="Theme.ams.Text">
+        <item name="typeface">@string/ams_font_regular</item>
+        <item name="android:textColor">@color/mcd_black</item>
+    </style>
+
+    <style name="Theme.McD.Text.Toolbar.Title" parent="Theme.AMS.Text.Regular">
+        <item name="android:textSize">@dimen/ams_text_default</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="typography_title" parent="@android:style/Widget.TextView">
+
+        <item name="android:textSize">@dimen/text_size_title</item>
+
+    </style>
+
+    <style name="Theme.Error.Holder" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Theme.McD.Error.Text" parent="Theme.ams.Text">
+        <item name="android:gravity">top|left</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textColor">@color/mcd_black</item>
+        <item name="android:textSize">@dimen/ams_text_input</item>
+        <item name="typeface">@string/ams_font_regular</item>
+    </style>
+
+    <style name="Theme.ams.Link" parent="Theme.ams.Text">
+        <item name="android:textColor">@color/ams_red</item>
+        <item name="typeface">@string/ams_font_regular</item>
+        <item name="android:textSize">@dimen/ams_text_link</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">@dimen/ams_text_link_padding</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+
+    <style name="Theme.ams.Link.Small" parent="Theme.ams.Link">
+        <item name="android:textSize">@dimen/ams_text_link_small</item>
+    </style>
+
+    <style name="Theme.ams.Link.Medium" parent="Theme.ams.Link">
+        <item name="android:textSize">@dimen/ams_text_link_medium</item>
+    </style>
+
+
+    <style name="Theme.McD.Error.Image" parent="AppTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:src">@mipmap/error</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:description">@string/okay</item>
+        <item name="android:contentDescription">@string/error</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+    </style>
+
+    <style name="Theme.AMS.Text" parent="android:Widget.TextView">
+        <item name="typeface">@string/ams_font_light</item>
+        <item name="android:textColor">@color/mcd_color_text_primary</item>
+        <item name="android:textSize">@dimen/ams_text_default</item>
+        <item name="android:textIsSelectable">false</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Theme.McD.Text.Thin" parent="Theme.AMS.Text">
+        <item name="typeface">@string/ams_font_thin</item>
+        <item name="android:textSize">@dimen/ams_text_default</item>
+    </style>
+
+    <style name="Theme.ams.Headline" parent="Theme.McD.Text.Thin">
+        <item name="android:textSize">@dimen/ams_text_headline</item>
+    </style>
+
+    <style name="Theme.ams.Error.Holder" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Theme.ams.Register.Card" parent="AppTheme">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:padding">@dimen/ams_text_label</item>
+        <item name="android:background">@drawable/input_bg</item>
+    </style>
+
+    <style name="Theme.ams.Text.Hint" parent="Theme.AMS.Text">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ams_text_input_hint</item>
+        <item name="android:textColor">@color/mcd_color_text_captions</item>
+        <item name="typeface">@string/ams_font_regular</item>
+    </style>
+
+    <style name="Theme.ams.Text.Input" parent="Widget.AppCompat.EditText">
+        <item name="typeface">@string/ams_font_light</item>
+        <item name="android:textSize">@dimen/ams_text_input</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/default_margin</item>
+        <item name="android:textColor">@color/mcd_color_text_account_edit_text</item>
+        <item name="android:textCursorDrawable">@drawable/ams_cursor</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="Theme.AMS.Text.Input.Center" parent="Theme.ams.Text.Input">
+        <item name="android:paddingTop">@dimen/ams_input_padding_top</item>
+        <item name="android:paddingBottom">@dimen/ams_input_padding_bottom</item>
+        <item name="android:layout_marginBottom">@dimen/ams_input_margin_bottom</item>
+    </style>
+
+    <style name="Theme.AMS.Error.Text" parent="Theme.AMS.Text">
+        <item name="android:gravity">top|left</item>
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginTop">@dimen/default_margin</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:textColor">@color/mcd_black</item>
+        <item name="android:textSize">@dimen/ams_text_input</item>
+        <item name="typeface">@string/ams_font_regular</item>
+    </style>
+
+    <style name="Theme.AMS.Text.Label" parent="Theme.AMS.Text">
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/ams_text_label</item>
+        <item name="android:textColor">@color/mcd_color_text_captions</item>
+    </style>
+
+    <style name="Theme.AMS.Text.Button.Large" parent="Theme.AMS.Text.Label">
+        <item name="android:background">@drawable/gradient_yellow_button_enabled</item>
+        <item name="android:gravity">center</item>
+        <item name="typeface">@string/ams_font_regular</item>
+        <item name="android:padding">@dimen/ams_button_large_padding</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">0dp</item>
+        <item name="android:layout_marginBottom">0dp</item>
+        <item name="android:textColor">@color/mcd_black</item>
+    </style>
+
+
+    <style name="Theme.ams.Text.Input.Password.Center" parent="Theme.AMS.Text.Input.Center">
+        <item name="isPassword">true</item>
+    </style>
+
+    <style name="Theme.ams.Text.Button.Large.Disabled" parent="Theme.AMS.Text.Button.Large">
+        <item name="android:textColor">@color/mcd_disabled_button_text_color</item>
+        <item name="android:background">@drawable/gradient_yellow_button_disabled</item>
+    </style>
+
+    <style name="Theme.ams.Headline.Sub" parent="Theme.ams.Headline">
+        <item name="typeface">@string/ams_font_light</item>
+        <item name="android:textSize">@dimen/ams_text_headline_sub</item>
+        <item name="android:textColor">@color/mcd_captions_color</item>
+    </style>
+
+    <style name="DialogTheme" parent="android:Theme.Dialog">
+
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+
+
+        <!-- No backgrounds, titles or window float -->
+        <item name="android:windowBackground">@null</item>
+        <item name="android:windowNoTitle">false</item>
+        <item name="android:windowIsFloating">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="button_text_midium" >
+        <item name="android:layout_width" >fill_parent</item>
+        <item name="android:layout_height" >wrap_content</item>
+        <item name="android:textColor" >#ffffff</item>
+        <item name="android:gravity" >center</item>
+        <item name="android:layout_margin" >3dp</item>
+        <item name="android:textSize" >12dp</item>
+        <item name="android:textStyle" >bold</item>
+        <item name="android:shadowColor" >#000000</item>
+        <item name="android:shadowDx" >1</item>
+        <item name="android:shadowDy" >1</item>
+        <item name="android:shadowRadius" >2</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.PopupMenu">
+        <item name="android:dropDownHorizontalOffset">-4dp</item>
+        <item name="android:dropDownVerticalOffset">4dp</item>
+    </style>
+
+
+    <style name="button" parent="buttonBase"></style>
+
+    <style name="button.flat">
+        <item name="android:background">@drawable/flat_button</item>
+        <item name="android:textColor">@drawable/flat_button_text_color</item>
+        <item name="android:height">@dimen/components_button_height</item>
+        <item name="android:gravity">center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">@dimen/components_button_text_size</item>
+        <item name="android:paddingLeft">@dimen/components_button_text_padding_left</item>
+        <item name="android:paddingRight">@dimen/components_button_text_padding_right</item>
+    </style>
+
+    <style name="spinner_style"  parent="Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_margin">1dp</item>
+        <item name="android:paddingLeft">5dp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:paddingRight">5dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:dropDownSelector">?android:selectableItemBackground</item>
+        <item name="android:divider">@null</item>
+
+
+    </style>
+
+
+</resources>
