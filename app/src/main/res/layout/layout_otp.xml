@@ -54,13 +54,14 @@
                 android:visibility="gone" />
 
             <com.mobisolutions.ams.uikit.widget.CustomTextInputLayout
-                android:id="@+id/email_input_layout"
+                android:id="@+id/otp_input_layout"
                 style="@style/Theme.ams.Register.Card"
                 app:hintTextAppearance="@style/Theme.ams.Text.Hint">
 
                 <com.mobisolutions.ams.uikit.widget.CustomEditText
                     android:id="@+id/otp"
                     style="@style/Theme.AMS.Text.Input.Center"
+                    android:maxLength="6"
                     android:hint="@string/otp_hint"
                     android:inputType="number" />
             </com.mobisolutions.ams.uikit.widget.CustomTextInputLayout>

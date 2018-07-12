@@ -413,14 +413,14 @@ public class HomeActivity extends BaseActivity {
                }));
                break;
            case APIConstants.AMC :
-               Log.d(TAG, "-----Service meetings is updated-----");
+               Log.d(TAG, "-----Service AMC is updated-----");
 
                httpConnectionManager.getAMCResponse(new APIServiceManager(mContext).getAMCGetCallBack(APIConstants.AMC));
                
                break;
 
            case APIConstants.HOME_SERVICES :
-               Log.d(TAG, "-----Service meetings is updated-----");
+               Log.d(TAG, "-----Service HOME_SERVICES is updated-----");
 
                httpConnectionManager.getHomeServicesResponse(new APIServiceManager(mContext).getHomeServicesGetCallBack(APIConstants.HOME_SERVICES));
 

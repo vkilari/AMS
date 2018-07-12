@@ -245,8 +245,8 @@ public class DBHelper extends SQLiteOpenHelper {
             + MODIFIED_DATE + " DATETIME" + ")";
     private String CREATE_TABLE_CATEGORIES = "create table " + TABLE_CATEGORIES + " ("
             // + "SLNo " + "INTEGER PRIMARY KEY, "
-            + GROCERY_CATEGORY_ID + " INTEGER PRIMARY KEY, "
-            + GROCERY_CATEGORY_NAME + " TEXT, "
+            + CATEGORY_ID + " INTEGER PRIMARY KEY, "
+            + CATEGORY_NAME + " TEXT, "
             + CREATED_DATE + " DATETIME, "
             + MODIFIED_DATE + " DATETIME" + ")";
     private String CREATE_TABLE_CATEGORIES_ITEMS = "create table " + TABLE_CATEGORIES_ITEMS + " ("
@@ -322,6 +322,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
             JSONObject servicesJsonObject = new JSONObject(loadJSONFromAsset(servicesJson));
             List<ServiceItemBean> servicesArrayList = parseServicesJson(servicesJsonObject);
+            Log.d(TAG, "-------Home Services length:::"+servicesArrayList.size());
 
             JSONObject jsonObject = new JSONObject(loadJSONFromAsset(groceryJson));
             insertCategoryListItems(parseMasterJson(jsonObject), db);
@@ -415,30 +416,6 @@ public class DBHelper extends SQLiteOpenHelper {
 
     }
 
-    public  boolean insertHomeServices(ArrayList<ServiceItemBean> homeServicesList, SQLiteDatabase db) {
-
-        Log.d(TAG, "-------is settings settingsList::"+homeServicesList.size());
-        for (int i = 0; i<homeServicesList.size(); i++) {
-            ContentValues contentValues = new ContentValues();
-            contentValues.put(APARTMENT_ID, "sssn101");
-            contentValues.put(SERVICE_NAME, homeServicesList.get(i).getServiceName());
-            contentValues.put(SERVICE_IMAGE, homeServicesList.get(i).getServiceImage());
-            contentValues.put(SERVICE_DESCRIPTION, homeServicesList.get(i).getServiceDescription());
-            contentValues.put(CREATED_DATE, AppUtils.getCurrentDate());
-            contentValues.put(MODIFIED_DATE, AppUtils.getCurrentDate());
-
-            long amcInsert = db.insert(CALENDAR_TABLE, null, contentValues);
-
-            Log.d(TAG, "-------Inserted Calendar::"+amcInsert);
-
-        }
-
-
-        return true;
-    }
-
-
-
     public ArrayList<Settings> getSettings() {
 
         ArrayList<Settings> settingsList = new ArrayList<Settings>();
@@ -494,15 +471,16 @@ public class DBHelper extends SQLiteOpenHelper {
             contentValues.put(CREATED_DATE, AppUtils.getCurrentDate());
             contentValues.put(MODIFIED_DATE, AppUtils.getCurrentDate());
            List<ServiceProviderBean> providerBeanList = servicesList.get(i).getProviderList();
+            Log.d(TAG, "-------Inserted servicesList.get(i).getProviderList()::"+servicesList.get(i).getProviderList());
             for (int j = 0; j<providerBeanList.size(); j++) {
                 ContentValues providerValues = new ContentValues();
                 providerValues.put(SERVICE_ID, servicesList.get(i).getServiceId());
-                providerValues.put(SERVICE_PROVIDER_NAME, providerBeanList.get(i).getProviderName());
-                providerValues.put(SERVICE_PROVIDER_IMAGE, providerBeanList.get(i).getProviderEmail());
-                providerValues.put(SERVICE_PROVIDER_ADDRESS, providerBeanList.get(i).getProviderAddress());
-                providerValues.put(SERVICE_PROVIDER_MOBILE, providerBeanList.get(i).getProviderMobile());
-                providerValues.put(SERVICE_PROVIDER_EMAIL, providerBeanList.get(i).getProviderEmail());
-                providerValues.put(SERVICE_PROVIDER_REGION, providerBeanList.get(i).getServiceRegion());
+                providerValues.put(SERVICE_PROVIDER_NAME, providerBeanList.get(j).getProviderName());
+                providerValues.put(SERVICE_PROVIDER_IMAGE, providerBeanList.get(j).getProviderEmail());
+                providerValues.put(SERVICE_PROVIDER_ADDRESS, providerBeanList.get(j).getProviderAddress());
+                providerValues.put(SERVICE_PROVIDER_MOBILE, providerBeanList.get(j).getProviderMobile());
+                providerValues.put(SERVICE_PROVIDER_EMAIL, providerBeanList.get(j).getProviderEmail());
+                providerValues.put(SERVICE_PROVIDER_REGION, providerBeanList.get(j).getServiceRegion());
                 providerValues.put(CREATED_DATE, AppUtils.getCurrentDate());
                 providerValues.put(MODIFIED_DATE, AppUtils.getCurrentDate());
 
@@ -512,7 +490,7 @@ public class DBHelper extends SQLiteOpenHelper {
 
             long serviceInsert = db.insert(SERVICES_TABLE, null, contentValues);
 
-            Log.d(TAG, "-------Inserted Calendar::"+serviceInsert);
+            Log.d(TAG, "-------Inserted Services::"+serviceInsert);
 
         }
 
@@ -959,10 +937,12 @@ public class DBHelper extends SQLiteOpenHelper {
                 servicesBean.setServiceDescription(servicesObject.getString("service_description"));
                 servicesBean.setServiceRegion(servicesObject.getString("service_region"));
                 JSONArray providersArray = servicesObject.getJSONArray("service_details");
+                Log.d(TAG, "-----Provider Array Length:::::"+providersArray.length());
                 List<ServiceProviderBean> providersArrayList = new ArrayList<>();
                 for (int j = 0; j < providersArray.length(); j++) {
                     ServiceProviderBean serviceProviderBean = new ServiceProviderBean();
-                    JSONObject providerObject = providersArray.getJSONObject(i);
+                    JSONObject providerObject = providersArray.getJSONObject(j);
+                    Log.d(TAG, "-----Provider name:::::"+providerObject.getString("provider_name"));
                     serviceProviderBean.setProviderName(providerObject.getString("provider_name"));
                     serviceProviderBean.setProviderAddress(providerObject.getString("provider_address"));
                     serviceProviderBean.setProviderImage(providerObject.getString("provider_image"));
@@ -970,13 +950,17 @@ public class DBHelper extends SQLiteOpenHelper {
                     serviceProviderBean.setProviderEmail(providerObject.getString("provider_email"));
                     serviceProviderBean.setServiceRegion(providerObject.getString("provider_region"));
                     providersArrayList.add(serviceProviderBean);
+
+                    Log.d(TAG, "-----Provider providersArrayList size:::::"+providersArrayList.size());
+
                     servicesBean.setProviderList(providersArrayList);
                 }
 
                 servicesArrayList.add(servicesBean);
             }
         }catch (Exception e) {
-            Log.e(TAG, "Error while parsing Calendar JSON"+e.getMessage());
+            Log.e(TAG, "Error while parsing Home Services JSON"+e.getMessage());
+            e.printStackTrace();
         }
 
         return servicesArrayList;
@@ -1081,7 +1065,6 @@ public class DBHelper extends SQLiteOpenHelper {
                     ContentValues contentItemValues = new ContentValues();
                     contentItemValues.put(CATEGORY_ITEM_NAME, itemList.get(j).getItemName());
                     contentItemValues.put(CATEGORY_ID, entries.getKey().getCategoryId());
-
                     contentItemValues.put(CREATED_DATE, "" + getDateTime());
                     contentItemValues.put(MODIFIED_DATE, "" + getDateTime());
                     long Itemvalue = db.insert(TABLE_CATEGORIES_ITEMS, null, contentItemValues);

@@ -100,21 +100,21 @@ public class APIServiceManager {
         return new CallbackUtils.AMCCallBack() {
             @Override
             public void setErrorJson(JSONObject jsonObject) {
-                Log.d(TAG, "---------Getting Contacts Error::::"+jsonObject);
+                Log.d(TAG, "---------Getting AMC Error::::"+jsonObject);
             }
             @Override
             public void setSuccessJson(JSONObject jsonObject) {
 
-                Log.d(TAG, "---------Getting Contacts::::"+jsonObject);
+                Log.d(TAG, "---------Getting AMC::::"+jsonObject);
                 ArrayList<AMC> amcArrayList = new ArrayList<>();
                 try {
 
                     int responseCode = Integer.parseInt(jsonObject.getString("response_code"));
                     String responseMessage = jsonObject.getString("response_status");
                     String updatedTimeStamp = jsonObject.getString("timestamp");
-                    Log.d(TAG, "---------Getting Contacts::::"+responseCode+"::::"+updatedTimeStamp);
+                    Log.d(TAG, "---------Getting AMC::::"+responseCode+"::::"+updatedTimeStamp);
                     if (responseCode == APIConstants.SUCCESS) {
-                        JSONArray jsonArray = jsonObject.getJSONArray("contacts");
+                        JSONArray jsonArray = jsonObject.getJSONArray("amc");
 
                         for (int i = 0; i < jsonArray.length(); i++) {
                             AMC amc = new AMC();
@@ -131,7 +131,7 @@ public class APIServiceManager {
                     }
 
                 }catch (Exception e) {
-                    Log.e(TAG, "Exception while reading Contacts::"+e.getMessage());
+                    Log.e(TAG, "Exception while reading AMC::"+e.getMessage());
                 }
 
                 if (amcArrayList.size() > 0) {
@@ -158,22 +158,22 @@ public class APIServiceManager {
         return new CallbackUtils.HomeServices() {
             @Override
             public void setErrorJson(JSONObject jsonObject) {
-                Log.d(TAG, "---------Getting Contacts Error::::"+jsonObject);
+                Log.d(TAG, "---------Getting getHomeServicesGetCallBack Error::::"+jsonObject);
             }
             @Override
             public void setSuccessJson(JSONObject jsonObject) {
 
-                Log.d(TAG, "---------Getting Contacts::::"+jsonObject);
+                Log.d(TAG, "---------Getting getHomeServicesGetCallBack::::"+jsonObject);
                 ArrayList<ServiceItemBean> servicesArrayList = new ArrayList<>();
                 try {
 
                     int responseCode = Integer.parseInt(jsonObject.getString("response_code"));
                     String responseMessage = jsonObject.getString("response_status");
                     String updatedTimeStamp = jsonObject.getString("timestamp");
-                    Log.d(TAG, "---------Getting Contacts::::"+responseCode+"::::"+updatedTimeStamp);
+                    Log.d(TAG, "---------Getting getHomeServicesGetCallBack::::"+responseCode+"::::"+updatedTimeStamp);
                     if (responseCode == APIConstants.SUCCESS) {
 
-                        JSONArray jsonArray = jsonObject.getJSONArray("contacts");
+                        JSONArray jsonArray = jsonObject.getJSONArray("home_service_categories");
 
                         for (int i = 0; i < jsonArray.length(); i++) {
                             ServiceItemBean serviceItemBean = new ServiceItemBean();
@@ -190,13 +190,13 @@ public class APIServiceManager {
                     }
 
                 }catch (Exception e) {
-                    Log.e(TAG, "Exception while reading Contacts::"+e.getMessage());
+                    Log.e(TAG, "Exception while reading getHomeServicesGetCallBack::"+e.getMessage());
                 }
 
                 if (servicesArrayList.size() > 0) {
                     dbHelper.deleteHomeServices();
 
-                    dbHelper.insertHomeServices(servicesArrayList, db);
+                    dbHelper.insertServices(servicesArrayList, db);
 
                     dbHelper.updateSettings(settingID, updatedTimeStamp);
 

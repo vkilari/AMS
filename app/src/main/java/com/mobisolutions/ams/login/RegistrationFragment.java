@@ -114,7 +114,6 @@ public class RegistrationFragment extends Fragment implements View.OnClickListen
         mPhoneError = (LinearLayout) v.findViewById(R.id.error_phone_number);
         mEmailError = (LinearLayout) v.findViewById(R.id.error_email);
         mPasswordError = (LinearLayout) v.findViewById(R.id.error_password);
-        mRegister = (CustomTextView) v.findViewById(R.id.register);
         mRegisteredError = (LinearLayout) v.findViewById(R.id.register_registered_error);
         mEmailRegisteredError = (LinearLayout) v.findViewById(R.id.error_email_registered);
         mAllFields = new CustomEditText(mContext);

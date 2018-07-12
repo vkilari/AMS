@@ -28,6 +28,18 @@
 		"service_name": "meetings",
 		"service_status": "active",
 		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "106",
+		"service_name": "amc",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
+	},
+	{
+		"service_id": "107",
+		"service_name": "home_services",
+		"service_status": "active",
+		"created_date": "2017-12-24 08:01:49"
 	}
 
 ]
